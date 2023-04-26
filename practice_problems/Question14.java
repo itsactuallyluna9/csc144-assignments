@@ -17,6 +17,8 @@ public class Question14 {
     }
 
     public static void main(String[] args) {
+        // this uses ints for simplicity, but this WILL work with doubles, floats, etc.
+        // literally just ctrl+f "int" and replace.
         int[] lst = {1, 2, 3, 4, 5};
         System.out.println("largestNum({1, 2, 3, 4, 5}) -> " + largestNum(lst));
     }
