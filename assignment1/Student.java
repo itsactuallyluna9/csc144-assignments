@@ -42,4 +42,24 @@ public class Student extends PersonWithEmergencyContact {
             throw new Exception("GPA must be between 0 and 4.");
         }
     }
+
+    public String toTinyString() {
+        return String.format("%s %s (%s, %f)", this.first_name, this.last_name, this.class_level, this.gpa);
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format("Name: %s %s\n", this.first_name, this.last_name));
+        sb.append(String.format("Phone: %s\n", this.phone));
+        sb.append(String.format("Email: %s\n", this.email));
+        sb.append(String.format("Age: %d\n", this.age));
+        sb.append("Emergency Contact:\n");
+        sb.append(String.format("\tName: %s %s\n", this.emergency_contact.first_name, this.emergency_contact.last_name));
+        sb.append(String.format("\tPhone: %s\n", this.emergency_contact.phone));
+        sb.append(String.format("\tEmail: %s\n", this.emergency_contact.email));
+        sb.append(String.format("\tAge: %d\n", this.emergency_contact.age));
+        sb.append(String.format("Class Level: %s\n", this.class_level));
+        sb.append(String.format("GPA: %f\n", this.gpa));
+        return sb.toString();
+    }
 }

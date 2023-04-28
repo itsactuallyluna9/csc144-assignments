@@ -9,6 +9,10 @@ public class PersonWithEmergencyContact extends Person {
     // and then Student and Employee extend this class.
     // this way, we can have an emergency contact for both students and employees, without having to add it to Person.
     // (and risk having an emergency contact for an emergency contact, which, again, is just silly)
+
+    // also, I REALLY DON'T LIKE HAVING `emerency_contact` AS JUST A STRING
+    // SO EXECUTIVE DECISION (and an excercise): ITS NOW A PERSON
+    // also it's an excersise in inheritance or something.
     protected Person emergency_contact;
 
     public PersonWithEmergencyContact(String first_name, String last_name, String phone, String email, int age, Person emergency_contact) throws Exception {
