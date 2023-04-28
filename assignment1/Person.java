@@ -70,9 +70,9 @@ public class Person {
     }
 
     public void setEmail(String email) throws Exception {
-        // only check: string has at least one character.
-        // TODO: check that the string is a valid email address.
-        if (email.length() > 0) {
+        // only check: string has at least one character and contains an @.
+        // i know this is a bad email check, but it's better than nothing.
+        if (email.length() > 0 && email.contains("@")) {
             this.email = email;
         } else {
             throw new Exception("Email address must have at least one character.");
