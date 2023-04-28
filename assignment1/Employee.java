@@ -1,3 +1,8 @@
+/*
+ * CSC 144 - Assignment 1
+ * Mark Smith
+ * file: assignment1/Employee.java
+ */
 package assignment1;
 
 public class Employee extends PersonWithEmergencyContact {

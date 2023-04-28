@@ -1,3 +1,8 @@
+/*
+ * CSC 144 - Assignment 1
+ * Mark Smith
+ * file: assignment1/Person.java
+ */
 package assignment1;
 
 public class Person {
@@ -8,6 +13,7 @@ public class Person {
     // No emergency contact here, too easy to require that an emerency contact requires an emerency contact.
     // Which is a philosophical question rather than a computer science question.
     // see the class `PersonWithEmergencyContact`, which is this (via subclass) with an emergency contact.
+    // (and for more reasoning)
     protected int age;
 
     public Person(String first_name, String last_name, String phone, String email, int age) throws Exception {
