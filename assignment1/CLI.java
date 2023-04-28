@@ -394,7 +394,8 @@ public class CLI {
                         println(student.toString());
                         found++;
                         print("Would you like to modify this student? (y/n) ");
-                        if (input.nextLine().toLowerCase() == "y") {
+                        String answer = input.nextLine().toLowerCase();
+                        if (answer.equals("y")) {
                             modifyStudent(student);
                             break;
                         }
@@ -414,7 +415,8 @@ public class CLI {
                         println(employee.toString());
                         found++;
                         print("Would you like to modify this employee? (y/n) ");
-                        if (input.nextLine().toLowerCase() == "y") {
+                        String answer = input.nextLine().toLowerCase();
+                        if (answer.equals("y")) {
                             modifyEmployee(employee);
                             break;
                         }
@@ -460,7 +462,8 @@ public class CLI {
                         println(student.toString());
                         found++;
                         print("Would you like to delete this student? (y/n) ");
-                        if (input.nextLine().toLowerCase() == "y") {
+                        String answer = input.nextLine().toLowerCase();
+                        if (answer.equals("y")) {
                             students.remove(student);
                             println("Student deleted.");
                             break;
@@ -481,7 +484,8 @@ public class CLI {
                         println(employee.toString());
                         found++;
                         print("Would you like to delete this employee? (y/n) ");
-                        if (input.nextLine().toLowerCase() == "y") {
+                        String answer = input.nextLine().toLowerCase();
+                        if (answer.equals("y")) {
                             employees.remove(employee);
                             println("Employee deleted.");
                             break;
